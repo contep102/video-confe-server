@@ -27,6 +27,7 @@ const Home = () => {
       process.env.NODE_ENV === "production"
         ? "https://video-confe-client.onrender.com"
         : "http://localhost:5000";
+    console.log(url);
 
     console.log(`Environment: ${process.env.NODE_ENV}`);
     const socket = io(url, {});
